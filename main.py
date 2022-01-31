@@ -5,7 +5,7 @@ from tkinter import filedialog as fd
 import requests
 from PIL import Image, ImageTk
 from io import BytesIO 
-
+from os import getcwd
 
 global meme_data
 global new_meme
@@ -49,7 +49,7 @@ if __name__ == '__main__' :
     root.config(bg="#F2F2F2")
     root.minsize(700,700)
     root.maxsize(700,700)
-    root.wm_iconbitmap('E:\Akki Prac\Python\Tkinter\MemeGenerator\Images\meme1.ico')
+    root.wm_iconbitmap(f'{getcwd()}\Images\meme1.ico')
 
     #Main Title
     head = Label(text="Meme Generator", font="poppins 25 bold", bg="#19242D", fg="white")
